@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+
+#pad {
+    padding: 20% 43%;  /*both are for centre alignment*/
+    /*padding: 300px 650px; */
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 50px;
+    border: 3px solid #3c67e3;
+    border-radius: 10px;
+}
+
+.button:hover {
+    animation: pulsate 1.5s ease-in;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow:
+        0 0 25px #5ddcff,
+        0 0 50px #4e00c2;
+    }
+}

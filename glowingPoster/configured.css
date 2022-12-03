@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap");
+
+h1 {
+    padding-top: 10%;
+    font-size: calc(20px + 18vh);
+    line-height: calc(20px + 20vh);
+    text-shadow: 0 0 50px #067fd0, 0 0 15px #067fd0, 0 0 20px #067fd0,
+    0 0 40px #067fd0, 0 0 40px #0046b8, 0 0 10px #067fd0, 0 0 98px #0046b8;
+    color: #fff6a9;
+    font-family: "Cormorant SC", "Sacramento", cursive;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 10s infinite;
+}
+
+body {
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: #222;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 7px,
+        rgba(0,0,0,0.8) 9px,
+        rgba(0,0,0,0.8) 13px,
+        transparent 13px
+    );
+}
+
+@-webkit-keyframes blink {
+    20%, 24%, 55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 10%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 0 0 5px #067fd0, 0 0 15px #067fd0, 0 0 20xp #067fd0, 0 0 40px #067fd0,
+        0 0 60px #0046b8, 0 0 10px #067fd0, 0 0 90px #0046b8;
+        color: #fff6a9
+    }
+}
+
+@keyframes blink {
+    20%, 24%, 55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 10%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 0 0 5px #067fd0, 0 0 15px #067fd0, 0 0 20xp #067fd0, 0 0 40px #067fd0,
+        0 0 60px #0046b8, 0 0 10px #067fd0, 0 0 90px #00468b;
+        color: #fff6a9
+    }
+}

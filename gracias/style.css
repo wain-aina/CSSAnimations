@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cinzel:wght@600&display=swap');
+
+body {
+    background: black;
+}
+
+svg text {
+    font-family: "Cinzel";
+    stroke: #fff;
+    font-size: 5rem;
+    font-weight: 300;
+    stroke-width: 3;
+   
+    animation: textAnimate 4s infinite alternate;
+    
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsl(0, 0%, 100%)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(0, 0%, 100%,0%)
+    }
+    
+  }
+  
+  
+  
