@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+
+    <title>Quotes</title>
+</head>
+<body class="bg-zinc-900 text-white font-[poppins]">
+    <div class="mt-48 flex flex-col items-center justify-center">
+        <div
+            class="profileCard h-72 w-[30rem] bg-zinc-800 shadow-xl flex flex-col items-center justify-between py-10 rounded-xl">
+            <h2 class="text-2xl font-bold mb-4 text-cyan-500 shadow-xl">Random Quote Generator</h2>
+            <p id="quote" class="text-uppercase text-md text-gray-400 text-center px-8">Try not to become a
+                man of
+                success but rather try to become a man of value.
+            </p>
+            <p id="author" class="italic">By Author</p>
+
+            <button class="h-12 w-12 rounded-full bg-cyan-500 flex items-center justify-center mt-5 shadow-xl"
+                onclick="generateQuote()"><i class="fas fa-sync"></i></button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
